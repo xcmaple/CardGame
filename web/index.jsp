@@ -9,8 +9,13 @@
 <html>
   <head>
     <title>CardGame</title>
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-Hello  World!
+  <%=session.getAttribute("result")%>
   </body>
 </html>
