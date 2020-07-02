@@ -16,6 +16,7 @@
     </style>
   </head>
   <body>
+  Hello World!
   <%=session.getAttribute("result")%>
   </body>
 </html>
