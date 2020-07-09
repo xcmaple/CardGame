@@ -76,6 +76,7 @@ public class DealCard {
     /*
         定义一个方法，看牌，使用查表方法
     */
+
     public static void pokerShow(String name,HashMap<Integer,String> poker,ArrayList<Integer> list) {
         //输出玩家的名称
         System.out.print(name+ ":");

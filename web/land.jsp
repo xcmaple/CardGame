@@ -10,20 +10,35 @@
 <head>
     <title>Land</title>
 </head>
-<body background="image/bg.jpg">
-<div align="center" class="box">
-    <head>
+<style>
+    body{
+        text-align: center;
+    }
+    a{
+        font-size: 25px;
+        color:blue;
+        font-family:Monospace;
+    }
+    h1{
+        color:#5f6eff;
+    }
+    h2{
+        color: rgba(64, 255, 209, 0.97);
+    }
+
+</style>
+<body style="background:url(https://i01piccdn.sogoucdn.com/247707e920c0fa10)">
+<div style="center">
+    <form >
+    <h1>
         请登录您的账号：
-    </head>
-    <form id="form"method="post" action="servlet/LoginServlet">
-        UserName:<input type="text" value="${userName }" name="userName" id="userName"/><p/>
-        PassWord:<input type="password" value="${password }" name="password" id="password"/><br/>
-        <p/>
+    </h1>
+    <h2 style="center">YourName<input type="text" placeholder="tom" required></h2>
+    <h2 style="center">Pass_Word<input type="text" placeholder="123" required></h2>
+        <button class="btn btn-block btn-primary"><a href="#">登 录</a></button>
+        <button class="btn btn-block btn-danger"><a href="#" style="color:red">重 置</a></button>
+        <button class="btn btn-block btn-info"><a href="#" style="color:#9eb9ae" style="font-size: 20px">注册新账号</a></button>
     </form>
-    <a class="btn_style" id="btn_login"href="javascript:login()" >登陆</a>
-    <a class="btn_style" id="btn_reset"href="javascript:reset()">重置</a>
-    <br/>
-    <font id="error"color="red">${error }</font>
 </div>
 </body>
 </html>

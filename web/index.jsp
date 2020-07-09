@@ -15,8 +15,11 @@
       }
     </style>
   </head>
-  <body>
-  Hello World!
+  <body style="background:rgba(102,122,131,0.78)">
+  <h1 style="center">Hql</h1>
+  <h1 style="center">Leq</h1>
+  <h1 style="center">Lzh</h1>
   <%=session.getAttribute("result")%>
   </body>
 </html>
+
