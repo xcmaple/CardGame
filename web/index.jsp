@@ -7,19 +7,49 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>CardGame</title>
-    <style>
-      body{
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body style="background:rgba(102,122,131,0.78)">
-  <h1 style="center">Hql</h1>
-  <h1 style="center">Leq</h1>
-  <h1 style="center">Lzh</h1>
-  <%=session.getAttribute("result")%>
-  </body>
+<head>
+  <title>登录页面</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+  a{
+    font-size: 25px;
+    color:blue;
+    font-family:Monospace;
+  }
+  h1{
+    color:#5f6eff;
+  }
+  h2{
+    color: rgba(64, 255, 209, 0.97);
+  }
+</style>
+<body style="background:url(https://i01piccdn.sogoucdn.com/247707e920c0fa10)">
+<div type="center">
+<form action="checking.jsp" method="post">
+  <h1>
+    请登录您的账号：
+  </h1>
+  <h2>
+    <label>YourName：</label><input type="text" name="uname" placeholder="tom" required/>
+  </h2>
+  <h2>
+    <label>PassWord：</label><input type="password" name="pwd" placeholder="123" required/>
+  </h2>
+  <p>
+    </label><input type="submit" value="登录"/>
+  </p>
+</form>
+</div>
+<%
+  String str=(String)request.getSession().getAttribute("mrgss");
+  if(str!=null){
+    out.print(str);
+  }
+%>
 </html>
+
+
 
