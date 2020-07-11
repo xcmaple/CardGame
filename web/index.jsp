@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>登录页面</title>
+  <title>登录页面（一）</title>
 </head>
 <style>
   body{
     text-align: center;
+    background: #f4fff5;
   }
   a{
     font-size: 25px;
@@ -26,14 +27,19 @@
     color: rgba(64, 255, 209, 0.97);
   }
 </style>
-<body style="background:url(https://i01piccdn.sogoucdn.com/247707e920c0fa10)">
+<body>
+<a href="#">
+  <img src="https://i01piccdn.sogoucdn.com/247707e920c0fa10"
+       alt="精美纸牌图片">
+</a>
 <div type="center">
-<form action="checking.jsp" method="post">
+<form action="checkingname.jsp" method="post">
   <h1>
     请登录您的账号：
   </h1>
   <h2>
-    <label>YourName：</label><input type="text" name="uname" placeholder="tom" required/>
+    <label>
+      YourName：</label><input type="text" name="uname" placeholder="tom" required/>
   </h2>
   <h2>
     <label>PassWord：</label><input type="password" name="pwd" placeholder="123" required/>

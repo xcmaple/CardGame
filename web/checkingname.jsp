@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: Lenovo
   Date: 2020/7/11
-  Time: 17:27
+  Time: 19:53
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,19 +10,19 @@
     String uname= request.getParameter("uname");
     String pwd=request.getParameter("pwd");
     boolean flag=false;
-    if(uname.equals("tom")&&pwd.equals("123456")){
+    if(uname.equals("tom")){
         flag=true;
     }
-    if(uname.equals("tim")&&pwd.equals("456123")){
+    if(uname.equals("tim")){
         flag=true;
     }
-    if(uname.equals("tomy")&&pwd.equals("654321")){
+    if(uname.equals("tomy")){
         flag=true;
     }
     if(flag){
-        request.getRequestDispatcher("welcome.jsp").forward(request,response);
+        request.getRequestDispatcher("login.jsp").forward(request,response);
     }else{
-        request.getSession().setAttribute("mrgss", "你的输入有误请你重新输入");
-        response.sendRedirect("login.jsp");
+        request.getSession().setAttribute("mrgss", "无法识别您的用户名，请您注册");
+        response.sendRedirect("register.jsp");
     }
 %>

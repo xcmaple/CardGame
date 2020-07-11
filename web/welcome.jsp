@@ -15,10 +15,25 @@
   <head>
         <base href="<%=basePath%>">
         <title>登陆成功</title>
+    <style>
+        body{
+            text-align: center;
+            background: #dbcfd5;
+        }
+    </style>
       </head>
-  <body>
-   欢迎<%=request.getParameter("uname") %>登录！
-<button class="btn btn-block btn-primary"><a href="http://localhost:8080/CardGame/land.jsp">请点击这儿开始游戏</a></button>
-  </body>
+<body>
+<a href="#">
+    <img class="smaller-image thick-green-border"
+         src="https://i03piccdn.sogoucdn.com/1ab69c478b016bb3"
+         alt="斗地主图片">
+</a>
+   <p>欢迎<%=request.getParameter("uname") %>登录！</p>
+<button class="btn btn-block btn-primary">
+    <a href="http://localhost:8080/CardGame/land.jsp">请点击这儿开始游戏</a></button>
+</div>
+</body>
 </html>
+
+
 
