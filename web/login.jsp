@@ -40,7 +40,7 @@
             <label>YourName：</label><input type="text" name="uname" placeholder="tom" required/>
         </h2>
         <h2>
-            <label>PassWord：</label><input type="password" name="pwd" placeholder="123" required/>
+            <label>Pass_Word：</label><input type="password" name="pwd" placeholder="123" required/>
         </h2>
         <p>
             </label><input type="submit" value="登录"/>
