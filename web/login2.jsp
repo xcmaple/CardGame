@@ -1,14 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: Lenovo
-  Date: 2020/7/11
-  Time: 19:58
+  Date: 2020/7/12
+  Time: 10:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>登录页面（二）</title>
+    <title>登录页面（三）</title>
 </head>
 <style>
     body{
@@ -32,7 +32,7 @@
          alt="精美纸牌图片">
 </a>
 <div type="center">
-    <form action="checking.jsp" method="post">
+    <form action="checking1.jsp" method="post">
         <h1>
             请登录您的账号：
         </h1>
@@ -45,10 +45,11 @@
         <p>
             </label><input type="submit" value="登录"/>
         </p>
+        <p><button class="btn btn-block btn-primary"><a href="http://localhost:8080/CardGame/tourist.jsp">请点击这儿寻求帮助</a></button></p>
     </form>
 </div>
     <%
-  String str=(String)request.getSession().getAttribute("mrgss1");
+  String str=(String)request.getSession().getAttribute("mrgss2");
   if(str!=null){
     out.print(str);
   }

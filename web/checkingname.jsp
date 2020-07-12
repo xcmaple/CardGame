@@ -9,20 +9,22 @@
 <%
     String uname= request.getParameter("uname");
     String pwd=request.getParameter("pwd");
-    boolean flag=false;
-    if(uname.equals("tom")){
-        flag=true;
-    }
-    if(uname.equals("tim")){
-        flag=true;
-    }
-    if(uname.equals("tomy")){
-        flag=true;
-    }
-    if(flag){
-        request.getRequestDispatcher("login.jsp").forward(request,response);
-    }else{
-        request.getSession().setAttribute("mrgss", "无法识别您的用户名，请您注册");
-        response.sendRedirect("register.jsp");
+    int flag1=1,flag2=2;
+        if((uname.equals("tom")&&pwd.equals("123456"))||(uname.equals("tim")&&pwd.equals("456123"))||(uname.equals("tomy")&&pwd.equals("654321"))){
+            flag1=0;
+        }
+        else if(uname.equals("tom")||uname.equals("tim")||uname.equals("tomy"))
+        {
+            flag2=1;flag1=5;
+        }
+        if(flag1==0&&flag2==2){
+            request.getRequestDispatcher("welcome.jsp").forward(request,response);
+        }
+     else if(flag2==1&&flag1==5){
+            request.getSession().setAttribute("mrgss1", "密码错误，请您重新输入");
+            response.sendRedirect("login.jsp");
+    }else if(flag1==1&&flag2==2){
+        request.getSession().setAttribute("mrgss", "用户名暂未注册，请您注册");
+        response.sendRedirect("login1.jsp");
     }
 %>
