@@ -62,7 +62,7 @@
     </li>
     <li>
         <%----%>
-<button class="btn btn-block btn-primary"><a href="http://localhost:8080/CardGame/login.jsp">点击这儿返回主页面</a></button>
+<button class="btn btn-block btn-primary"><a href="http://localhost:8080/CardGame/login.jsp">或者点击这儿返回主页面</a></button>
 <%----%>
  </li>
 </ol>
